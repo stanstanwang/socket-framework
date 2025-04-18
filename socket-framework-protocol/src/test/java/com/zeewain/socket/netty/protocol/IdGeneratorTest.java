@@ -1,4 +1,4 @@
-package com.zeewain.cbb.netty.protocol;
+package com.zeewain.socket.netty.protocol;
 
 import com.zeewain.socket.netty.IdGenerator;
 import org.junit.jupiter.api.Assertions;

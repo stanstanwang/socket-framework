@@ -1,4 +1,4 @@
-package com.zeewain.cbb.netty.protocol.util;
+package com.zeewain.socket.netty.protocol.util;
 
 import com.zeewain.socket.netty.protocol.util.dto.Foo;
 import com.zeewain.socket.netty.util.JsonLogUtil;

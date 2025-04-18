@@ -1,4 +1,4 @@
-package com.zeewain.cbb.netty.protocol.util.dto;
+package com.zeewain.socket.netty.protocol.util.dto;
 
 import com.zeewain.socket.netty.util.LogIgnore;
 import lombok.Data;

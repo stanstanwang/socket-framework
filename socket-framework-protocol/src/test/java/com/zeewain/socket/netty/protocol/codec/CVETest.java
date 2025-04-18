@@ -1,4 +1,4 @@
-package com.zeewain.cbb.netty.protocol.codec;
+package com.zeewain.socket.netty.protocol.codec;
 
 import com.alibaba.fastjson.JSON;
 
