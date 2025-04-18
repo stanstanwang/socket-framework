@@ -17,6 +17,7 @@ import com.zeewain.socket.netty.server.protocol.ServerSocketProtocolHandler;
 import com.zeewain.socket.netty.server.protocol.ServerWebsocketProtocolHandler;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
@@ -78,10 +79,10 @@ public class NettyServerAutoConfig {
     }
 
     @Bean
-    /*@ConditionalOnBean(type = {
+    @ConditionalOnBean(type = {
             "com.alibaba.cloud.nacos.registry.NacosServiceRegistry",
             "com.alibaba.cloud.nacos.NacosDiscoveryProperties"
-    })*/
+    })
     @ConditionalOnProperty(value = "spring.cloud.nacos.discovery.register-enabled", havingValue = "true", matchIfMissing = true)
     public NettyAutoRegister nettyAutoRegister(NacosServiceRegistry serviceRegistry,
                                                NacosDiscoveryProperties discoveryProperties,
