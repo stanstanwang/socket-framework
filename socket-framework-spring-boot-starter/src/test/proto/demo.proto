@@ -1,0 +1,24 @@
+//使用 proto3 语法 ,未指定则使用proto2
+syntax = "proto3";
+
+//生成 proto 文件所在包路径
+package com.zeewain.cbb.netty.core.dto;
+
+//生成 proto 文件所在包路径
+option java_package = "com.zeewain.cbb.netty.core.dto";
+
+//生成 proto 文件名
+option java_outer_classname = "PersonProto";
+
+message Person {
+  //自身属性
+  int32 id = 1;
+  string name = 2;
+}
+
+message TtsVo {
+  string voice_code = 1;
+  string format = 2;
+  float speed = 3;
+  int32 volume = 4;
+}

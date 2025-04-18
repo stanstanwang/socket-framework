@@ -1,0 +1,15 @@
+<html>
+<head><title>Web Socket Test</title></head>
+<body>
+
+<!-- 内嵌的js没有提示，所以迁移出去了 -->
+<script type="text/javascript" src="socket.js">
+</script>
+<form onsubmit="return false;">
+    <input type="text" name="message" value="Hello, World!"/>
+    <input type="button" value="Send Web Socket Data" onclick="send(this.form.message.value)"/>
+    <h3>Output</h3>
+    <textarea id="responseText" style="width:500px;height:300px;"></textarea>
+</form>
+</body>
+</html>

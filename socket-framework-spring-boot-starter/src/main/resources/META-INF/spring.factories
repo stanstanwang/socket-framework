@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.zeewain.cbb.netty.NettyServerAutoConfig,\
+com.zeewain.cbb.netty.NettyClientAutoConfig
