@@ -3,7 +3,7 @@ A **high-performance Netty-based socket framework** that simplifies network comm
 ### **Key Features:**
 ✅ **Automatic Serialization** – Built-in support for common protocols (e.g., Protobuf, JSON).  
 ✅ **Business-First API** – Just implement your logic; the framework handles the rest.  
-✅ **Scalable & Efficient** – Leverages Netty’s event-driven model for high throughput.
+✅ **Scalable & Efficient** – Leverages Netty’s event-driven model for high throughput.  
 ✅ **No Blocking** – Supports non-blocking I/O for improved performance.
 
 
