@@ -10,7 +10,23 @@ A **high-performance Netty-based socket framework** that simplifies network comm
 ### **Example Usage:**
 
 
-1. Define the Processor to handle the tcp request
+1. Add the dependency to your project
+
+
+
+```xml
+
+<dependency>
+    <groupId>com.zeewain.socket</groupId>
+    <artifactId>socket-framework-spring-boot-starter</artifactId>
+    <version>1.0.0</version>
+</dependency>
+
+
+```
+
+
+2. Define the Processor to handle the tcp request
 
 ```java
 
@@ -29,7 +45,7 @@ public class CompanyProcessor {
 
 ```
 
-2. Create a client interface to send requests
+3. Create a client interface to send requests
 
 
 ```java
