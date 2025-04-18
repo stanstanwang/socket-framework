@@ -1,6 +1,6 @@
 package com.zeewain.socket.netty.core;
 
-import com.zeewain.socket.netty.client.builder.ConnectionListener;
+import com.zeewain.socket.core.client.builder.ConnectionListener;
 import com.zeewain.socket.netty.core.processor.TestClient;
 import com.zeewain.socket.netty.NettyResponse;
 import io.netty.channel.Channel;

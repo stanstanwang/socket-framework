@@ -1,10 +1,10 @@
 package com.zeewain.socket.netty.core;
 
-import com.zeewain.socket.netty.EnableNettyClients;
-import com.zeewain.socket.netty.NettyClientAutoConfig;
-import com.zeewain.socket.netty.NettyServerAutoConfig;
-import com.zeewain.socket.netty.client.builder.NettyClientBuilder;
-import com.zeewain.socket.netty.server.NettyServer;
+import com.zeewain.socket.core.EnableNettyClients;
+import com.zeewain.socket.starter.NettyClientAutoConfig;
+import com.zeewain.socket.starter.NettyServerAutoConfig;
+import com.zeewain.socket.core.client.builder.NettyClientBuilder;
+import com.zeewain.socket.core.server.NettyServer;
 import io.netty.channel.Channel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;

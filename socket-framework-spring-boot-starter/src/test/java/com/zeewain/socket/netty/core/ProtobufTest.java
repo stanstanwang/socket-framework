@@ -1,10 +1,11 @@
 package com.zeewain.socket.netty.core;
 
 import cn.hutool.core.util.RandomUtil;
+import com.zeewain.socket.core.Processor;
 import com.zeewain.socket.netty.core.dto.Person;
 import com.zeewain.socket.netty.core.dto.PersonProto;
 import com.zeewain.socket.netty.core.processor.ProtobufClient;
-import com.zeewain.socket.netty.mvc.NettyProcessorManager;
+import com.zeewain.socket.core.mvc.NettyProcessorManager;
 import com.zeewain.socket.netty.NettyResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;

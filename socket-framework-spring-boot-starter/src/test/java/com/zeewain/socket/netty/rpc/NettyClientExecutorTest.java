@@ -1,7 +1,8 @@
 package com.zeewain.socket.netty.rpc;
 
 import cn.hutool.core.lang.TypeReference;
-import com.zeewain.socket.netty.core.NettyMapping;
+import com.zeewain.socket.core.NettyMapping;
+import com.zeewain.socket.core.rpc.RpcMethod;
 import com.zeewain.socket.netty.NettyResponse;
 import io.netty.util.concurrent.Promise;
 import org.junit.jupiter.api.Assertions;

@@ -1,7 +1,7 @@
 package com.zeewain.socket.netty.util;
 
 import cn.hutool.core.util.URLUtil;
-import com.zeewain.socket.netty.util.NetUtil;
+import com.zeewain.socket.core.util.NetUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,6 @@
 package com.zeewain.socket.netty.doc;
 
-import com.zeewain.socket.netty.doc.DocGenerator;
+import com.zeewain.socket.core.doc.DocGenerator;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

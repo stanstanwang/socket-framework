@@ -1,6 +1,6 @@
 package com.zeewain.socket.netty.core;
 
-import com.zeewain.socket.netty.core.heartbeat.HeartBeatClient;
+import com.zeewain.socket.core.handle.heartbeat.HeartBeatClient;
 import com.zeewain.socket.netty.HeartbeatMessage;
 import com.zeewain.socket.netty.NettyResponse;
 import io.netty.channel.Channel;

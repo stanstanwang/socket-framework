@@ -1,8 +1,8 @@
 package com.zeewain.socket.netty.core.processor;
 
 import cn.hutool.core.lang.Assert;
-import com.zeewain.socket.netty.core.NettyMapping;
-import com.zeewain.socket.netty.core.NettyProcessor;
+import com.zeewain.socket.core.NettyMapping;
+import com.zeewain.socket.core.NettyProcessor;
 import com.zeewain.socket.netty.core.dto.Foo;
 import com.zeewain.socket.netty.NettyResponse;
 import io.netty.channel.Channel;

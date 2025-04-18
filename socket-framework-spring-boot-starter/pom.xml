@@ -21,6 +21,10 @@
             <groupId>com.zeewain.socket</groupId>
             <artifactId>socket-framework-protocol</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.zeewain.socket</groupId>
+            <artifactId>socket-framework-core</artifactId>
+        </dependency>
 
         <!--<dependency>
             <groupId>com.zeewain.cbb</groupId>

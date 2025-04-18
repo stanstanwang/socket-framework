@@ -1,7 +1,7 @@
 package com.zeewain.socket.netty.doc.processor;
 
-import com.zeewain.socket.netty.core.NettyMapping;
-import com.zeewain.socket.netty.core.NettyProcessor;
+import com.zeewain.socket.core.NettyMapping;
+import com.zeewain.socket.core.NettyProcessor;
 import com.zeewain.socket.netty.core.dto.Foo;
 import com.zeewain.socket.netty.NettyResponse;
 import io.netty.channel.Channel;

@@ -21,7 +21,7 @@
 
     <modules>
         <module>socket-framework-protocol</module>
-        <!--<module>socket-framework-core</module>-->
+        <module>socket-framework-core</module>
         <module>socket-framework-spring-boot-starter</module>
         <module>socket-framework-android</module>
     </modules>
@@ -50,6 +50,11 @@
             <dependency>
                 <groupId>com.zeewain.socket</groupId>
                 <artifactId>socket-framework-protocol</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.zeewain.socket</groupId>
+                <artifactId>socket-framework-core</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
