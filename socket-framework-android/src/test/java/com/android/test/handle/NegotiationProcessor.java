@@ -1,15 +1,15 @@
 package com.android.test.handle;
 
-import com.zeewain.cbb.netty.core.NettyMapping;
-import com.zeewain.cbb.netty.core.NettyProcessor;
-import com.zeewain.cbb.netty.core.negotiation.NegotiationClient;
-import com.zeewain.cbb.netty.protocol.NegotiationContext;
-import com.zeewain.cbb.netty.protocol.NegotiationInfo;
+import com.zeewain.socket.netty.core.NettyMapping;
+import com.zeewain.socket.netty.core.NettyProcessor;
+import com.zeewain.socket.netty.core.negotiation.NegotiationClient;
+import com.zeewain.socket.netty.NegotiationContext;
+import com.zeewain.socket.netty.NegotiationInfo;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 
-import static com.zeewain.cbb.netty.protocol.MessageConstants.CLIENT_HELLO;
-import static com.zeewain.cbb.netty.protocol.MessageConstants.SERVER_HELLO;
+import static com.zeewain.socket.netty.MessageConstants.CLIENT_HELLO;
+import static com.zeewain.socket.netty.MessageConstants.SERVER_HELLO;
 
 /**
  * @author stan

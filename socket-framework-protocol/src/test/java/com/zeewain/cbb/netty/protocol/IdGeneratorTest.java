@@ -1,9 +1,8 @@
 package com.zeewain.cbb.netty.protocol;
 
+import com.zeewain.socket.netty.IdGenerator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author stan

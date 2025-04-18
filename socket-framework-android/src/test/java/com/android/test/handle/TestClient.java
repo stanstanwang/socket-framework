@@ -1,8 +1,8 @@
 package com.android.test.handle;
 
-import com.zeewain.cbb.netty.core.NettyClient;
-import com.zeewain.cbb.netty.core.NettyMapping;
-import com.zeewain.cbb.netty.protocol.NettyResponse;
+import com.zeewain.socket.netty.core.NettyClient;
+import com.zeewain.socket.netty.core.NettyMapping;
+import com.zeewain.socket.netty.NettyResponse;
 import io.netty.channel.Channel;
 import io.netty.util.concurrent.Promise;
 import reactor.core.publisher.Mono;

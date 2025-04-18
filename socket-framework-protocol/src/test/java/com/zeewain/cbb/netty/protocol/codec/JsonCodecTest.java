@@ -3,8 +3,8 @@ package com.zeewain.cbb.netty.protocol.codec;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
-import com.zeewain.cbb.netty.protocol.NettyResponse;
-import com.zeewain.cbb.netty.protocol.codec.json.JsonCodec;
+import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.netty.codec.json.JsonCodec;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

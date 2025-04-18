@@ -1,11 +1,11 @@
 package com.android.test;
 
 import com.android.test.handle.TestClient;
-import com.zeewain.cbb.netty.client.StartupClient;
-import com.zeewain.cbb.netty.core.negotiation.NegotiationClient;
-import com.zeewain.cbb.netty.core.negotiation.NegotiationProcessor;
-import com.zeewain.cbb.netty.protocol.NegotiationInfo;
-import com.zeewain.cbb.netty.protocol.NettyResponse;
+import com.zeewain.socket.netty.client.StartupClient;
+import com.zeewain.socket.netty.core.negotiation.NegotiationClient;
+import com.zeewain.socket.netty.core.negotiation.NegotiationProcessor;
+import com.zeewain.socket.netty.NegotiationInfo;
+import com.zeewain.socket.netty.NettyResponse;
 import org.junit.jupiter.api.Assertions;
 import reactor.core.publisher.Mono;
 

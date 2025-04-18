@@ -1,6 +1,6 @@
 package com.zeewain.cbb.netty.protocol.codec;
 
-import com.zeewain.cbb.netty.protocol.HeadMapSerializer;
+import com.zeewain.socket.netty.HeadMapSerializer;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import org.junit.jupiter.api.Test;

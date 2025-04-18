@@ -1,10 +1,9 @@
 package com.zeewain.cbb.netty.protocol.util;
 
-import com.zeewain.cbb.netty.protocol.util.dto.Foo;
+import com.zeewain.socket.netty.protocol.util.dto.Foo;
+import com.zeewain.socket.netty.util.JsonLogUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author stan
