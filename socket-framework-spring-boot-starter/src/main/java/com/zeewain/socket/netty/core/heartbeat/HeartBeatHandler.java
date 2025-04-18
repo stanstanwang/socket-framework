@@ -38,10 +38,8 @@ public class HeartBeatHandler extends SimpleChannelInboundHandler<Message> {
         // 双向互发心跳的， 这个时候不用给应答， 是在我们发现很久没有写消息之后才给心跳
         if (HEARTBEAT.equals(msgCode)) {
             SocketAddress remoteAddress = ctx.channel().remoteAddress();
-            if(req.getId()%10 == 1 || req.getId()%10 == 6) {//5次只打印一次
-                log.debug("处理心跳请求 客户端 ip={}, msgId={}, msgCode={}",
-                        remoteAddress, req.getId(), msgCode);
-            }
+            log.debug("处理心跳请求 客户端 ip={}, msgId={}, msgCode={}",
+                    remoteAddress, req.getId(), msgCode);
         // 这种是客户端发送心跳过来的，  需要给应答
         } else if (HEARTBEAT_REQ.equals(msgCode)) {
             handleHeartbeat(ctx, req);
@@ -57,11 +55,8 @@ public class HeartBeatHandler extends SimpleChannelInboundHandler<Message> {
 
         long start = System.currentTimeMillis();
         SocketAddress remoteAddress = ctx.channel().remoteAddress();
-        boolean islog = req.getId()%10 == 1 || req.getId()%10 == 6;
-        if(islog){//5次只打印一次
-            log.debug("处理心跳请求 客户端 ip={}, msgId={}, msgCode={}",
-                    remoteAddress, req.getId(), msgCode);
-        }
+        log.debug("处理心跳请求 客户端 ip={}, msgId={}, msgCode={}",
+                remoteAddress, req.getId(), msgCode);
         Message result = new Message();
         result.setId(req.getId());
         // result.setCodec(req.getCodec());
@@ -71,11 +66,9 @@ public class HeartBeatHandler extends SimpleChannelInboundHandler<Message> {
         NettyResponse<HeartbeatMessage> body = NettyResponse.success(HEARTBEAT_RESP, HeartbeatMessage.PONG);
         result.setBody(body);
         AbstractNettyRemoting.writeToChannel(ctx.channel(), result);
-        if(islog) {
-            log.debug("处理心跳应答 客户端 ip={}, msgId={}, msgCode={}, respMsgCode={} elapseTime={}ms",
-                    remoteAddress, req.getId(), msgCode, result.getMsgCode(),
-                    System.currentTimeMillis() - start);
-        }
+        log.debug("处理心跳应答 客户端 ip={}, msgId={}, msgCode={}, respMsgCode={} elapseTime={}ms",
+                remoteAddress, req.getId(), msgCode, result.getMsgCode(),
+                System.currentTimeMillis() - start);
     }
 
 
