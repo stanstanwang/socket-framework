@@ -2,7 +2,7 @@ package com.zeewain.socket.android.test.handle;
 
 import com.zeewain.socket.core.NettyClient;
 import com.zeewain.socket.core.NettyMapping;
-import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.protocol.NettyResponse;
 import io.netty.channel.Channel;
 import io.netty.util.concurrent.Promise;
 import reactor.core.publisher.Mono;

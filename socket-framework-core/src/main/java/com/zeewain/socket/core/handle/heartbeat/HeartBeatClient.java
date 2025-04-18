@@ -3,15 +3,15 @@ package com.zeewain.socket.core.handle.heartbeat;
 import com.zeewain.socket.core.NettyClient;
 import com.zeewain.socket.core.NettyMapping;
 import com.zeewain.socket.core.NettyHeader;
-import com.zeewain.socket.netty.HeartbeatMessage;
-import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.protocol.HeartbeatMessage;
+import com.zeewain.socket.protocol.NettyResponse;
 import io.netty.channel.Channel;
 import io.netty.util.concurrent.Promise;
 
 import java.util.Map;
 
-import static com.zeewain.socket.netty.MessageConstants.HEARTBEAT;
-import static com.zeewain.socket.netty.MessageConstants.HEARTBEAT_REQ;
+import static com.zeewain.socket.protocol.MessageConstants.HEARTBEAT;
+import static com.zeewain.socket.protocol.MessageConstants.HEARTBEAT_REQ;
 
 /**
  * @author stan

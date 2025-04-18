@@ -2,8 +2,8 @@ package com.zeewain.socket.core.client;
 
 import com.zeewain.socket.core.mvc.AbstractNettyRemoting;
 import com.zeewain.socket.core.rpc.NettyRpcResponseHandler;
-import com.zeewain.socket.netty.IdGenerator;
-import com.zeewain.socket.netty.Message;
+import com.zeewain.socket.protocol.IdGenerator;
+import com.zeewain.socket.protocol.Message;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandler;

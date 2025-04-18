@@ -1,8 +1,8 @@
 package com.zeewain.socket.core;
 
-import com.zeewain.socket.netty.Message;
-import com.zeewain.socket.netty.NettyResponse;
-import com.zeewain.socket.netty.util.InterfaceUtil;
+import com.zeewain.socket.protocol.Message;
+import com.zeewain.socket.protocol.NettyResponse;
+import com.zeewain.socket.protocol.util.InterfaceUtil;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 

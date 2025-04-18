@@ -1,7 +1,7 @@
 package com.zeewain.socket.core.mvc;
 
 import com.zeewain.socket.core.Processor;
-import com.zeewain.socket.netty.Message;
+import com.zeewain.socket.protocol.Message;
 import io.netty.channel.ChannelHandlerContext;
 import lombok.SneakyThrows;
 

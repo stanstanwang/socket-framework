@@ -1,6 +1,6 @@
 package com.zeewain.socket.netty.core.dto;
 
-import com.zeewain.socket.netty.codec.protobuf.ProtobufConverter;
+import com.zeewain.socket.protocol.codec.protobuf.ProtobufConverter;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 

@@ -13,7 +13,7 @@ import com.zeewain.socket.core.handle.heartbeat.HeartBeatHandler;
 import com.zeewain.socket.core.handle.negotiation.NegotiationClient;
 import com.zeewain.socket.core.handle.negotiation.NegotiationListener;
 import com.zeewain.socket.core.rpc.NettyRpcResponseHandler;
-import com.zeewain.socket.netty.IdGenerator;
+import com.zeewain.socket.protocol.IdGenerator;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

@@ -1,9 +1,9 @@
 package com.zeewain.socket.core.handle.heartbeat;
 
 import com.zeewain.socket.core.mvc.AbstractNettyRemoting;
-import com.zeewain.socket.netty.HeartbeatMessage;
-import com.zeewain.socket.netty.Message;
-import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.protocol.HeartbeatMessage;
+import com.zeewain.socket.protocol.Message;
+import com.zeewain.socket.protocol.NettyResponse;
 import io.netty.channel.*;
 import io.netty.handler.timeout.IdleState;
 import io.netty.handler.timeout.IdleStateEvent;
@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.net.SocketAddress;
 
-import static com.zeewain.socket.netty.MessageConstants.*;
+import static com.zeewain.socket.protocol.MessageConstants.*;
 
 /**
  * netty 服务器端心跳处理器

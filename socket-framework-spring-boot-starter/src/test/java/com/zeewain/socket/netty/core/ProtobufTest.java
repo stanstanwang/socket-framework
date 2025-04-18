@@ -6,7 +6,7 @@ import com.zeewain.socket.netty.core.dto.Person;
 import com.zeewain.socket.netty.core.dto.PersonProto;
 import com.zeewain.socket.netty.core.processor.ProtobufClient;
 import com.zeewain.socket.core.mvc.NettyProcessorManager;
-import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.protocol.NettyResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;

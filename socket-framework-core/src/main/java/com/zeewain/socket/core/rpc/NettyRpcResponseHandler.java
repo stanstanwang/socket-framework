@@ -1,7 +1,7 @@
 package com.zeewain.socket.core.rpc;
 
 import cn.hutool.core.thread.NamedThreadFactory;
-import com.zeewain.socket.netty.Message;
+import com.zeewain.socket.protocol.Message;
 import com.zeewain.socket.core.util.CollectionUtils;
 import io.netty.channel.*;
 import lombok.extern.slf4j.Slf4j;

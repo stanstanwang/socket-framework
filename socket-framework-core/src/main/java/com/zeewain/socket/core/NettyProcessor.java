@@ -1,6 +1,6 @@
 package com.zeewain.socket.core;
 
-import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.protocol.NettyResponse;
 import org.springframework.stereotype.Component;
 
 import java.lang.annotation.*;

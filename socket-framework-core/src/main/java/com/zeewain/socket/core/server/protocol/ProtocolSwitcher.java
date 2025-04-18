@@ -1,6 +1,6 @@
 package com.zeewain.socket.core.server.protocol;
 
-import com.zeewain.socket.netty.ProtocolConstants;
+import com.zeewain.socket.protocol.ProtocolConstants;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

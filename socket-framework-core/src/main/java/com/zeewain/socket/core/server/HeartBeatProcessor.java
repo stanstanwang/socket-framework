@@ -2,11 +2,11 @@ package com.zeewain.socket.core.server;
 
 import com.zeewain.socket.core.Processor;
 import com.zeewain.socket.core.mvc.NettyProcessorManager;
-import com.zeewain.socket.netty.HeartbeatMessage;
-import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.protocol.HeartbeatMessage;
+import com.zeewain.socket.protocol.NettyResponse;
 
-import static com.zeewain.socket.netty.MessageConstants.HEARTBEAT_REQ;
-import static com.zeewain.socket.netty.MessageConstants.HEARTBEAT_RESP;
+import static com.zeewain.socket.protocol.MessageConstants.HEARTBEAT_REQ;
+import static com.zeewain.socket.protocol.MessageConstants.HEARTBEAT_RESP;
 
 /**
  * 处理心跳请求和响应

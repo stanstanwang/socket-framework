@@ -1,7 +1,7 @@
 package com.zeewain.socket.core.handle.negotiation;
 
 import com.zeewain.socket.core.client.builder.ConnectionListener;
-import com.zeewain.socket.netty.NegotiationInfo;
+import com.zeewain.socket.protocol.NegotiationInfo;
 import io.netty.channel.Channel;
 import org.springframework.core.Ordered;
 

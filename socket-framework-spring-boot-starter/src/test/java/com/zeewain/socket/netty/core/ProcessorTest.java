@@ -2,7 +2,7 @@ package com.zeewain.socket.netty.core;
 
 import com.zeewain.socket.netty.core.dto.Foo;
 import com.zeewain.socket.netty.core.processor.TestClient;
-import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.protocol.NettyResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;

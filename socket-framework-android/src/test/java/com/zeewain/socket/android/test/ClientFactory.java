@@ -12,10 +12,10 @@ import com.zeewain.socket.core.NettyProperties;
 import com.zeewain.socket.core.handle.heartbeat.HeartBeatClient;
 import com.zeewain.socket.core.handle.heartbeat.HeartBeatHandler;
 import com.zeewain.socket.core.mvc.NettyProcessorPostProcessor;
-import com.zeewain.socket.netty.IdGenerator;
-import com.zeewain.socket.netty.codec.json.JsonCodec;
-import com.zeewain.socket.netty.compress.GzipCompressor;
-import com.zeewain.socket.netty.compress.UnCompressor;
+import com.zeewain.socket.protocol.IdGenerator;
+import com.zeewain.socket.protocol.codec.json.JsonCodec;
+import com.zeewain.socket.protocol.compress.GzipCompressor;
+import com.zeewain.socket.protocol.compress.UnCompressor;
 import com.zeewain.socket.core.rpc.NettyClientFactory;
 import com.zeewain.socket.core.rpc.NettyRpcResponseHandler;
 

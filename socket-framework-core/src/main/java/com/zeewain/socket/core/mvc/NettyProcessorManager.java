@@ -2,7 +2,7 @@ package com.zeewain.socket.core.mvc;
 
 import cn.hutool.core.lang.Pair;
 import com.zeewain.socket.core.Processor;
-import com.zeewain.socket.netty.MessageTypeManager;
+import com.zeewain.socket.protocol.MessageTypeManager;
 
 import java.util.HashMap;
 import java.util.concurrent.ExecutorService;

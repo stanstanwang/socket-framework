@@ -1,7 +1,7 @@
 package com.zeewain.socket.core.rpc;
 
 import com.zeewain.socket.core.NettyProperties;
-import com.zeewain.socket.netty.IdGenerator;
+import com.zeewain.socket.protocol.IdGenerator;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;

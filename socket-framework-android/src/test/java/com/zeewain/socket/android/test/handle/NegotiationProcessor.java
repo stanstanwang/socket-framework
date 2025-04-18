@@ -3,13 +3,13 @@ package com.zeewain.socket.android.test.handle;
 import com.zeewain.socket.core.NettyMapping;
 import com.zeewain.socket.core.NettyProcessor;
 import com.zeewain.socket.core.handle.negotiation.NegotiationClient;
-import com.zeewain.socket.netty.NegotiationContext;
-import com.zeewain.socket.netty.NegotiationInfo;
+import com.zeewain.socket.protocol.NegotiationContext;
+import com.zeewain.socket.protocol.NegotiationInfo;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 
-import static com.zeewain.socket.netty.MessageConstants.CLIENT_HELLO;
-import static com.zeewain.socket.netty.MessageConstants.SERVER_HELLO;
+import static com.zeewain.socket.protocol.MessageConstants.CLIENT_HELLO;
+import static com.zeewain.socket.protocol.MessageConstants.SERVER_HELLO;
 
 /**
  * @author stan

@@ -4,7 +4,7 @@ import com.zeewain.socket.core.NettyMapping;
 import com.zeewain.socket.core.NettyProcessor;
 import com.zeewain.socket.netty.core.dto.Person;
 import com.zeewain.socket.netty.core.dto.PersonProto;
-import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.protocol.NettyResponse;
 import io.netty.channel.ChannelHandlerContext;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

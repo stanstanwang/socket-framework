@@ -1,8 +1,8 @@
 package com.zeewain.socket.core.rpc;
 
-import com.zeewain.socket.netty.Message;
-import com.zeewain.socket.netty.codec.BodyCodec;
-import com.zeewain.socket.netty.util.JsonLogUtil;
+import com.zeewain.socket.protocol.Message;
+import com.zeewain.socket.protocol.codec.BodyCodec;
+import com.zeewain.socket.protocol.util.JsonLogUtil;
 import io.netty.channel.EventLoop;
 import io.netty.util.concurrent.DefaultPromise;
 import lombok.Getter;

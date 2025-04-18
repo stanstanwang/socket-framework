@@ -3,9 +3,9 @@ package com.zeewain.socket.netty.core;
 import com.alibaba.fastjson.JSON;
 import com.zeewain.socket.netty.core.dto.PersonProto;
 import com.zeewain.socket.netty.core.dto.TtsVo;
-import com.zeewain.socket.netty.NettyProto;
-import com.zeewain.socket.netty.NettyResponse;
-import com.zeewain.socket.netty.codec.protobuf.ProtobufConvertUtil;
+import com.zeewain.socket.protocol.NettyProto;
+import com.zeewain.socket.protocol.NettyResponse;
+import com.zeewain.socket.protocol.codec.protobuf.ProtobufConvertUtil;
 import org.junit.jupiter.api.Test;
 
 /**

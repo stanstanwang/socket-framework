@@ -15,7 +15,7 @@ import com.zeewain.socket.core.server.ServerHandlerProvider;
 import com.zeewain.socket.core.server.protocol.ProtocolSwitcher;
 import com.zeewain.socket.core.server.protocol.ServerSocketProtocolHandler;
 import com.zeewain.socket.core.server.protocol.ServerWebsocketProtocolHandler;
-import com.zeewain.socket.netty.IdGenerator;
+import com.zeewain.socket.protocol.IdGenerator;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;

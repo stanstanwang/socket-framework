@@ -4,8 +4,8 @@ import com.zeewain.socket.android.test.handle.TestClient;
 import com.zeewain.socket.core.client.StartupClient;
 import com.zeewain.socket.core.handle.negotiation.NegotiationClient;
 import com.zeewain.socket.core.handle.negotiation.NegotiationProcessor;
-import com.zeewain.socket.netty.NegotiationInfo;
-import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.protocol.NegotiationInfo;
+import com.zeewain.socket.protocol.NettyResponse;
 import org.junit.jupiter.api.Assertions;
 import reactor.core.publisher.Mono;
 

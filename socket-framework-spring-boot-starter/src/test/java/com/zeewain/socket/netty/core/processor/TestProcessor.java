@@ -4,7 +4,7 @@ import cn.hutool.core.lang.Assert;
 import com.zeewain.socket.core.NettyMapping;
 import com.zeewain.socket.core.NettyProcessor;
 import com.zeewain.socket.netty.core.dto.Foo;
-import com.zeewain.socket.netty.NettyResponse;
+import com.zeewain.socket.protocol.NettyResponse;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import lombok.extern.slf4j.Slf4j;
