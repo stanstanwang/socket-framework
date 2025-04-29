@@ -2,6 +2,7 @@ package com.zeewain.socket.core.rpc;
 
 import com.zeewain.socket.core.EnableNettyClients;
 import com.zeewain.socket.core.NettyClient;
+import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.annotation.AnnotatedBeanDefinition;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
@@ -15,6 +16,7 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.core.type.filter.AnnotationTypeFilter;
 import org.springframework.util.Assert;
+import org.springframework.util.ClassUtils;
 
 import java.util.Map;
 import java.util.Set;
@@ -73,11 +75,17 @@ public class NettyClientRegistrar implements ImportBeanDefinitionRegistrar, Reso
 
     private void registerNettyClient(BeanDefinitionRegistry registry, AnnotationMetadata annotationMetadata, Map<String, Object> attributes) {
         String className = annotationMetadata.getClassName();
-        BeanDefinitionBuilder definition = BeanDefinitionBuilder
+        Class clazz = ClassUtils.resolveClassName(className, null);
+        BeanDefinitionBuilder beanDefinitionBuilder = BeanDefinitionBuilder
                 .genericBeanDefinition(NettyClientFactory.class);
-        definition.addPropertyValue("type", className);
-        definition.setAutowireMode(AbstractBeanDefinition.AUTOWIRE_BY_TYPE);
-        registry.registerBeanDefinition(className, definition.getBeanDefinition());
+        beanDefinitionBuilder.addPropertyValue("type", className);
+        beanDefinitionBuilder.setAutowireMode(AbstractBeanDefinition.AUTOWIRE_BY_TYPE);
+        beanDefinitionBuilder.setLazyInit(true);
+        AbstractBeanDefinition beanDefinition = beanDefinitionBuilder.getBeanDefinition();
+        // 提前设置好 FactoryBean 响应的类型，避免根据类型匹配的时候需要实例化对象 造成的性能和提前初始化的影响
+        // org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(java.lang.String, org.springframework.beans.factory.support.RootBeanDefinition, boolean)
+        beanDefinition.setAttribute(FactoryBean.OBJECT_TYPE_ATTRIBUTE, clazz);
+        registry.registerBeanDefinition(className, beanDefinition);
     }
 
 
