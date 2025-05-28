@@ -71,7 +71,7 @@ public class ServerWebsocketProtocolHandler extends ServerSocketProtocolHandler 
         // TODO delay stan 2024/9/12 websocketPath应该是可以有多个的
         pipeline.addLast(new WebSocketServerProtocolHandler(websocketPath, subprotocols, allowExtensions,
                 maxFrameSize, allowMaskMismatch, checkStartsWith, dropPongFrames, handshakeTimeoutMillis));
-
+        pipeline.addLast(new WebSocketFrameAggregator(maxFrameSize));
         // websocket协议升级之后的处理
         pipeline.addLast(websocketProtocolCodec);
     }
@@ -144,6 +144,7 @@ public class ServerWebsocketProtocolHandler extends ServerSocketProtocolHandler 
             if (webSocketFrame instanceof TextWebSocketFrame || webSocketFrame instanceof BinaryWebSocketFrame) {
                 out.add(webSocketFrame.content().retain());
             } else {
+                log.warn("unexpected websocket frame {}, close channel", webSocketFrame);
                 ctx.close();
             }
         }
